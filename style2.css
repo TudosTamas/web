@@ -1,0 +1,7 @@
+a.active {
+    text-decoration: none;
+    transition: 1s;
+}
+a.active {
+    color: blue;
+}
