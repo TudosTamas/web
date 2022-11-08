@@ -8,15 +8,49 @@
    <link rel="stylesheet" href="style.css"
 </head>
 <body>
-    <a href="index.html">HOME</a>
-    |
-    <a href="kep.html">Képlinkes feladat</a>
-    |
-    <a href="listak.html">Listák</a>
-    |
-    <a href="tablazat.html">Órarend</a>
-    |
-    <a class="active" href="urlap.html">Pizza rendelés</a>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kep.html">Képlinkes feladat</a></li>
+          <li><a href="listak.html">Listák</a></li>
+          <li><a href="tablazat.html">Órarend</a></li>
+          <li><a class="active" href="urlap.html">Pizza rendelés</a></li>
+        </ul>
+        
+        </body>
+        </html>
+        
 
     <h1>Pizza rendelés</h1>
     <table>
