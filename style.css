@@ -43,13 +43,15 @@ li a:hover:not(.active) {
     list-style-type: decimal;
 }
 
+.evszakok td {
+      border: none;
+}
+
 .ullist  li {
     padding-left: 25px;
     float: none;
     list-style-position:inside;
-    color: #0eed00;
+    color: #1ced00;
     list-style-type:disc;
     background-color: darkslategrey;
 }
-
-
