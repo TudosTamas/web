@@ -1,92 +1,117 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="evszakok.css">
     <title>Évszakok</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
     <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
+        div {
+            border: 1px solid black;
+            transition: .5s;
         }
-        
-        li {
+        div:hover{
+            transform: scale(1.1);
+        }
+        .box1 {
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        .box3 {
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        .box4 {
+          width: 400px;
+          height: 400px;
           float: left;
         }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #04AA6D;
-        }
-        </style>
-    
-    <div class="sidebar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kep.html">Képlinkes feladat</a></li>
-            <li><a href="listak.html">Listák</a></li>
-            <li><a href="tablazat.html">Órarend</a></li>
-            <li><a href="urlap.html">Pizza rendelés</a></li>
-            <li><a class="active" href="evszakok.html">Évszakok</a></li>
-          </ul>
+        p{
+    font-size: larger;
+    text-align: center;
+    transition: .05s
+  }
+      .box {
+        float: left;
+      }
+    </style>
+
+    <style>
+                ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+          
+          .active {
+            background-color: #04AA6D;
+          }
+    </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="kep.html">Képlinkes feladat</a></li>
+    <li><a href="listak.html">Listák</a></li>
+    <li><a href="tablazat.html">Órarend</a></li>
+    <li><a href="urlap.html">Pizza rendelés</a></li>
+    <li><a class="active" href="evszakok.html">Évszakok</a></li>
+  </ul>
+
+    <div class="box">
+      <img src="spring.jpg" alt="" width="400px">
+        <b><p>TAVASZ</p></b>
     </div>
-    
-    <div class="content">
-        <h2>Évszakok</h2>
-        <div class="kepek">
-            <img src="spring.jpg" alt="tavasz" width="200px">
-            <p>Tavasz</p>
-        </div>
-        <div class="kepek">
-            <img src="summer.jpg" alt="nyár" width="200px">
-            <p>Nyár</p>
-        </div>
-        <div class="kepek">
-            <img src="autumn.jpg" alt="ősz" width="200px">
-            <p>Ősz</p>
-        </div>
-        <div class="kepek">
-            <img src="winter.jpg" alt="tél" width="200px">
-            <p>Tél</p>
-        </div>
-    
+
+    <div class="box">
+      <img src="summer.jpg" alt="" width="400px">
+        <b>
+          <p>NYÁR</p>
+        </b>
+    </div>
+
+    <div class="box">
+      <img src="autumn.jpg" alt="" width="400px">
+        <b>
+          <p>ŐSZ</p>
+        </b>
+    </div>
+   
+    <div class="box">
+      <img src="winter.jpg" alt="" width="400px">
+      <b>
+        <p>TÉL</p>
+      </b>
+    </div>
+
 </body>
+
 </html>
