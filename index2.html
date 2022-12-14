@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<style>
+    body {
+        background-color: darkslategrey;
+    }
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #15ff00;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: darkslategrey;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: rgb(180, 182, 182);
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+footer { position: under;
+                left: 0;
+                bottom: 0;
+                width: 110%;
+                background-color: #15ff00;
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
+</style>
+</head>
+<body style="font-family:Verdana;color:#ffffff;">
+
+<div style="background-color: black;padding:15px;text-align:center;">
+  <h1>Ez egy weboldal.</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a class="active" href="index2.html">Home</a>
+    <a href="kep.html">Képlinkes feladat</a>
+    <a href="listak.html">Listák</a>
+    <a href="tablazat.html">Órarend</a>
+    <a href="urlap.html">Pizza rendelés</a>
+    <a href="evszakok.html">Évszakok</a>
+    </div>
+
+  <div class="main">
+    <h2></h2>
+    <h1>Tudós Tamás</h1>
+    <h2>Tudós Tamás</h2>
+    <h3>Tudós Tamás</h3>
+    <h4>Tudós Tamás</h4>
+    <h5>Tudós Tamás</h5>
+    <h6>Tudós Tamás</h6>
+    <p>
+        Itt <b>látható</b> lent a <i>kollázs</i> képem.
+    </p>
+    <img src="kollazskep.jpg" alt="TT kollázs képe" title="TT KOLLÁZSA" width="400px"> 
+  </div>
+
+  <div class="right">
+    <h2>Rólam</h2>
+    <p>Nevem: Tudós Tamás</p>
+    <p> Miskolci SZC Kandó Kálmán Informatikai Technikumba tanulok.  </p>
+  </div>
+</div>
+
+<footer>
+    <p>Copyright</p>
+    <p><a href="tudost@kkszki.hu">tudost@kkszki.hu</a></p>
+  </footer>
+
+    
+</body>
+</html>
