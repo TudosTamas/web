@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <style>
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #111;
+              }
+              
+              .active {
+                background-color: #04AA6D;
+              }
+    
+       footer { position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: rgb(21, 255, 0);
+                    color: rgb(0, 0, 0);
+                    text-align: center;
+                }
+    </style>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kep.html">Képlinkes feladat</a></li>
+                <li><a href="listak.html">Listák</a></li>
+                <li><a href="tablazat.html">Órarend</a></li>
+                <li><a href="urlap.html">Pizza rendelés</a></li>
+                <li><a href="evszakok.html">Évszakok</a></li>
+                <li><a href="homoktovis.html">Homoktövis</a></li>
+                <li><a class="active" href="szamologep.html">Számológép</a></li>
+            </ul>
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Egyszerű számológép program</legend>
+                    <input type="number" name="szam" id="szam1" placeholder="SZÁM 1"> .
+                    <input type="number" name="szam" id="szam2" placeholder="SZÁM 2"> =
+                    <input type="text" id="eredmeny" placeholder="eredmény" readonly>
+                    <br><br>
+                    <label for="muv">Művelet:</label>
+                    <input type="button" name="muv" value="+" onclick="ad()">
+                    <input type="button" name="muv" value="-" onclick="kiv()">
+                    <input type="button" name="muv" value="x" onclick="szor()">
+                    <input type="button" name="muv" value=":" onclick="oszt()">
+                    <input type="reset" name="muv" value="DEL">
+        </fieldset>
+</form>
+<script>
+   function ad() {
+            eredmeny.value = Number(szam1.value) + Number(szam2.value);
+        }
+
+        function kiv() {
+            eredmeny.value = Number(szam1.value) - Number(szam2.value)
+        }
+
+
+        function szor() {
+            eredmeny.value = Number(szam1.value) * Number(szam2.value)
+
+        }
+
+
+        function oszt() {
+            eredmeny.value = Number(szam1.value) / Number(szam2.value)
+        }
+</script>
+
+<footer>
+    <p>Copyright</p>
+    <p><a href="tudost@kkszki.hu">tudost@kkszki.hu</a></p>
+  </footer>
+</body>
+</html>
