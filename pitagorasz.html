@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #hsz{
+            border-top: 200px solid transparent ;
+            border-left: 100px solid red ; 
+        }
+        footer { position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgb(21, 255, 0);
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="kep.html">Képlinkes feladat</a></li>
+        <li><a href="listak.html">Listák</a></li>
+        <li><a href="tablazat.html">Órarend</a></li>
+        <li><a href="urlap.html">Pizza rendelés</a></li>
+        <li><a href="evszakok.html">Évszakok</a></li>
+        <li><a href="homoktovis.html">Homoktövis</a></li>
+        <li><a href="szamologep.html">Számológép</a></li>
+        <li><a class="active" href="pitagorasz.html">Pitagorasz</a></li>
+      </ul>
+ <h1>Derékszögű Háromszög Rajz</h1>
+ <form action="javascript:void(0)">
+    <fieldset style="width: 50%;">
+    <legend> Adj meg legalább két oldalt!</legend>
+    <label id="aLabel">A:</label><br><input type="number" id="a"  oninput="rajzol()" ><br><br>
+    <label id="bLabel">B:</label><br><input type="number" id="b" oninput="rajzol()"><br><br>
+    <button type="button" id="submitButton">Submit</button><br> <button type="reset" id="resetButton">Reset</button>
+    <label id="cLabel"></label><br>
+    </form>
+    <div id="hsz" ></div>
+
+
+ </style>
+</head>
+<body>
+ <script>
+    function rajzol() {
+        const haromsz = document.getElementById('hsz')
+        haromsz.style = "border-top:" + a.value + "px solid transparent;"
+        + "border-left:" + b.value + "px solid blue;"
+        document.getElementById("submitButton").onclick = function(){
+
+a = document.getElementById("a").value;
+a = Number(a);
+
+b = document.getElementById("b").value;
+b = Number(b);
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+document.getElementById("cLabel").innerHTML = "C: " + c;
+}
+    }
+ </script>
+
+ <footer>
+    <p>Copyright</p>
+    <p><a href="tudost@kkszki.hu">tudost@kkszki.hu</a></p>
+  </footer>
+
+</body>
+</html>
